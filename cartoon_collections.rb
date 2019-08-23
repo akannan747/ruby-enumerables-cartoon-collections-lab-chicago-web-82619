@@ -9,7 +9,7 @@ def summon_captain_planet(calls)# code an argument here
 end
 
 def long_planeteer_calls(calls)# code an argument here
-  calls.reduce { |memo, call|
+  calls.reduce(memo) { |memo, call|
     memo || (call.length > 4) 
   }
 end
