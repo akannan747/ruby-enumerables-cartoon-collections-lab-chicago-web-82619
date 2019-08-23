@@ -11,7 +11,6 @@ end
 def long_planeteer_calls(calls)# code an argument here
   calls.reduce { |memo, call|
     memo || call.length > 4 
-    
   }
 end
 
