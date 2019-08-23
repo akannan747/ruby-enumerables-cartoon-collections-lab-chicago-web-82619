@@ -5,11 +5,11 @@ def roll_call_dwarves(dwarves)# code an argument here
 end
 
 def summon_captain_planet(calls)# code an argument here
-  calls.map {|word| word.capitalize + "!"}
+  calls.map {|call| call.capitalize + "!"}
 end
 
 def long_planeteer_calls(calls)# code an argument here
-  calls.select { |memo, call|
+  calls.select { |call|
     memo || (call.length > 4) 
   }
 end
